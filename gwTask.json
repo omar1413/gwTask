@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "6dc6f8c5-17f7-43b9-8d39-928a4f17a940",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add gateway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n    \"serialNumber\": \"5\",\n    \"name\": \"hello\",\n    \"ipAddress\": \"129.168.1.1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/gateway",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list gateways",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/gateway",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gateway detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/gateway/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateway",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add peripheral",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n    \"vendor\": \"test\",\n    \"createdDate\": null,\n    \"onlineStatus\": false,\n   \n    \"uid\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/gateway/5/peripheral",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateway",
+						"5",
+						"peripheral"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete peripheral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "get peripheral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
