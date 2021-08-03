@@ -5,6 +5,10 @@ import java.util.List;
 import com.gateway.task.entity.Gateway;
 import com.gateway.task.entity.Peripheral;
 
+import lombok.EqualsAndHashCode;
+
+
+@EqualsAndHashCode
 public class FlatGateway {
 	
 	
@@ -62,6 +66,8 @@ public class FlatGateway {
 	public void setPeripherals(List<Peripheral> peripherals) {
 		this.peripherals = peripherals;
 	}
+	
+	
 	
 	
 }
